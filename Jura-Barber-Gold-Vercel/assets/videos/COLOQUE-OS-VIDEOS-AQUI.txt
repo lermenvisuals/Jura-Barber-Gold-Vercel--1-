@@ -1,0 +1,2 @@
+Copie os dois vídeos verticais e os dois horizontais nesta pasta.
+Depois, edite const VIDEO_FILES no fim de index.html para informar os nomes dos arquivos.
