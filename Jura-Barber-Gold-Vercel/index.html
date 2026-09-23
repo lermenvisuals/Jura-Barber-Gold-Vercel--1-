@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#090909">
   <meta name="description" content="Jura Barber Gold na Gávea. Corte, barba, beleza feminina e cuidado em cada visita. Agende pelo WhatsApp.">
   <title>Jura Barber Gold — Gávea, Rio de Janeiro</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='11' fill='%23090909'/%3E%3Cpath d='M42 10v32c0 10-5 15-15 15-9 0-14-5-14-12h9c0 3 2 5 5 5 4 0 6-2 6-8V10z' fill='%23c2a46c'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/png" href="assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;1,400&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -47,9 +47,8 @@
     .header.scrolled, .header.menu-visible { background: rgba(9,9,9,.87); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); border-color: var(--border); }
     .header-inner { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
     .wordmark { display: inline-flex; align-items: center; gap: 10px; flex-shrink: 0; }
-    .wordmark-mark { width: 35px; height: 35px; display: grid; place-items: center; border: 1px solid var(--gold); color: var(--gold); font: 600 27px/1 var(--display); }
-    .wordmark-text { font: 700 17px/.82 var(--display); letter-spacing: .13em; }
-    .wordmark-text small { display: block; margin-top: 7px; color: var(--gold); font: 700 9px/1 var(--body); letter-spacing: .25em; }
+    .wordmark-logo { width: 55px; height: 66px; object-fit: contain; }
+    .footer-bottom .wordmark-logo { width: 80px; height: 96px; }
     .nav { display: flex; align-items: center; gap: clamp(20px, 3.2vw, 53px); }
     .nav a, .header-cta { font-size: 11px; font-weight: 700; letter-spacing: .17em; text-transform: uppercase; }
     .nav a { color: #cbc5b8; transition: color .25s; }
@@ -113,6 +112,7 @@
     .slot-art.simple .slot-number { position: absolute; right: 6%; bottom: 12%; font-size: clamp(100px, 15vw, 230px); }
     .video-slot video { position: absolute; z-index: 2; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 1; transition: opacity .6s; }
     .video-slot.video-ready video { opacity: 1; }
+    .video-sound-activation { position: absolute; z-index: 3; inset: 0 0 44px; width: 100%; border: 0; padding: 0; background: transparent; cursor: pointer; }
     .video-slot.video-ready .slot-art { opacity: 0; }
     .video-slot.video-ready:hover .slot-art { opacity: 0; }
 
@@ -278,7 +278,7 @@
   <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
   <header class="header" id="inicio">
     <div class="container header-inner">
-      <a class="wordmark" href="#inicio" aria-label="Jura Barber Gold — início"><span class="wordmark-mark" aria-hidden="true">J</span><span class="wordmark-text">JURA<small>BARBER GOLD</small></span></a>
+      <a class="wordmark" href="#inicio" aria-label="Jura Barber Gold — início"><img class="wordmark-logo" src="assets/logo.png" alt="Jura Barber Gold" width="1145" height="1374"></a>
       <nav class="nav" aria-label="Navegação principal"><a href="#experiencia">A Jura</a><a href="#servicos">Serviços</a><a href="#filmes">Vídeos</a><a href="#visita">Onde estamos</a></nav>
       <a class="header-cta booking" href="https://wa.me/5521966508588" target="_blank" rel="noopener noreferrer">Agendar horário</a>
       <button class="menu-button" type="button" aria-label="Abrir menu" aria-controls="mobile-nav" aria-expanded="false"><i></i><i></i></button>
@@ -362,7 +362,7 @@
     </section>
   </main>
 
-  <footer class="footer"><div class="container"><div class="footer-call"><div><p class="eyebrow">SEU LUGAR ESTÁ AQUI</p><h2 data-split aria-label="Até logo na Jura.">ATÉ LOGO<br>NA <em>JURA.</em></h2></div><a class="button booking" href="https://wa.me/5521966508588" target="_blank" rel="noopener noreferrer">Marcar um horário</a></div><div class="footer-bottom"><a class="wordmark" href="#inicio" aria-label="Voltar ao início"><span class="wordmark-mark" aria-hidden="true">J</span><span class="wordmark-text">JURA<small>BARBER GOLD</small></span></a><span>GÁVEA · RIO DE JANEIRO</span><a href="https://www.instagram.com/jurabarbergold/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a><a href="#inicio">VOLTAR AO INÍCIO</a></div></div></footer>
+  <footer class="footer"><div class="container"><div class="footer-call"><div><p class="eyebrow">SEU LUGAR ESTÁ AQUI</p><h2 data-split aria-label="Até logo na Jura.">ATÉ LOGO<br>NA <em>JURA.</em></h2></div><a class="button booking" href="https://wa.me/5521966508588" target="_blank" rel="noopener noreferrer">Marcar um horário</a></div><div class="footer-bottom"><a class="wordmark" href="#inicio" aria-label="Voltar ao início"><img class="wordmark-logo" src="assets/logo.png" alt="Jura Barber Gold" width="1145" height="1374"></a><span>GÁVEA · RIO DE JANEIRO</span><a href="https://www.instagram.com/jurabarbergold/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a><a href="#inicio">VOLTAR AO INÍCIO</a></div></div></footer>
   <a class="mobile-book booking" href="https://wa.me/5521966508588" target="_blank" rel="noopener noreferrer">Agendar meu horário</a>
 
   <script>
@@ -390,10 +390,37 @@
       video.preload = 'metadata';
       video.controls = true;
       video.setAttribute('aria-label',slot.getAttribute('aria-label'));
-      if (slot.classList.contains('portrait')) { video.muted = true; video.loop = true; video.autoplay = true; }
+      video.muted = true;
+      video.defaultMuted = true;
+      video.loop = true;
+      video.autoplay = true;
+      video.setAttribute('muted', '');
+      video.setAttribute('playsinline', '');
+      const activateSound = document.createElement('button');
+      activateSound.type = 'button';
+      activateSound.className = 'video-sound-activation';
+      activateSound.setAttribute('aria-label', 'Ativar som: ' + slot.getAttribute('aria-label'));
+      activateSound.addEventListener('click', () => {
+        video.muted = false;
+        video.volume = 1;
+        video.play().catch(() => {});
+        activateSound.remove();
+      });
+      video.addEventListener('volumechange', () => {
+        if (!video.muted) activateSound.remove();
+      });
       video.addEventListener('loadedmetadata', () => slot.classList.add('video-ready'), { once: true });
       video.src = file;
-      slot.append(video);
+      slot.append(video, activateSound);
+      video.play().catch(() => {});
+      if ('IntersectionObserver' in window) {
+        const autoplayObserver = new IntersectionObserver(entries => {
+          if (entries.some(entry => entry.isIntersecting) && video.muted) {
+            video.play().catch(() => {});
+          }
+        }, { threshold: 0.1 });
+        autoplayObserver.observe(slot);
+      }
     });
 
     const header = document.querySelector('.header');
